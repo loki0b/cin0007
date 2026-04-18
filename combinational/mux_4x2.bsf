@@ -19,73 +19,9 @@ Altera and sold by Altera or its authorized distributors.  Please
 refer to the Altera Software License Subscription Agreements 
 on the Quartus Prime software download page.
 */
-(header "graphic" (version "1.4"))
-(pin
-	(input)
-	(rect 112 144 280 160)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "A[1..0]" (rect 5 0 41 11)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect 112 160 280 176)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "B[1..0]" (rect 5 0 38 11)(font "DejaVu Sans Condensed" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect 112 176 280 192)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "S" (rect 5 0 13 11)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(output)
-	(rect 472 144 648 160)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "F[1..0]" (rect 90 0 125 11)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
+(header "symbol" (version "1.2"))
 (symbol
-	(rect 304 120 440 216)
+	(rect 16 16 152 112)
 	(text "mux_4x2" (rect 5 0 59 13)(font "DejaVu Sans Condensed" (font_size 8)))
 	(text "inst" (rect 8 81 25 92)(font "DejaVu Sans Condensed" ))
 	(port
@@ -119,23 +55,4 @@ on the Quartus Prime software download page.
 	(drawing
 		(rectangle (rect 16 16 120 80))
 	)
-)
-(connector
-	(pt 304 152)
-	(pt 280 152)
-	(bus)
-)
-(connector
-	(pt 304 168)
-	(pt 280 168)
-	(bus)
-)
-(connector
-	(pt 304 184)
-	(pt 280 184)
-)
-(connector
-	(pt 440 152)
-	(pt 472 152)
-	(bus)
 )
