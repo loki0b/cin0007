@@ -70,7 +70,7 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect 1544 128 1720 144)
+	(rect 1696 128 1872 144)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "N[5..0]" (rect 90 0 126 11)(font "Arial" ))
 	(pt 0 8)
@@ -133,7 +133,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 1376 104 1512 200)
+	(rect 1528 152 1664 248)
 	(text "mux_12x6" (rect 5 0 66 13)(font "DejaVu Sans Condensed" (font_size 8)))
 	(text "inst4" (rect 8 81 31 92)(font "DejaVu Sans Condensed" ))
 	(port
@@ -423,7 +423,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 1024 144 1088 192)
+	(rect 1024 192 1088 240)
 	(text "AND2" (rect 1 0 28 10)(font "Arial" (font_size 6)))
 	(text "inst21" (rect 3 37 33 48)(font "DejaVu Sans Condensed" ))
 	(port
@@ -452,6 +452,131 @@ on the Quartus Prime software download page.
 		(line (pt 14 37)(pt 31 37))
 		(line (pt 14 12)(pt 14 37))
 		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
+)
+(symbol
+	(rect 1344 72 1480 168)
+	(text "mux_12x6" (rect 5 0 66 13)(font "DejaVu Sans Condensed" (font_size 8)))
+	(text "inst6" (rect 8 81 31 92)(font "DejaVu Sans Condensed" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "A[5..0]" (rect 0 0 40 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "A[5..0]" (rect 21 27 61 40)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "B[5..0]" (rect 0 0 40 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "B[5..0]" (rect 21 43 61 56)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "S" (rect 0 0 8 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "S" (rect 21 59 29 72)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "N[5..0]" (rect 0 0 40 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "N[5..0]" (rect 75 27 115 40)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 136 32)(pt 120 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 1024 112 1088 160)
+	(text "AND3" (rect 1 0 28 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 37 26 48)(font "DejaVu Sans Condensed" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 22 18)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 22 18)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 16 16))
+	)
+	(port
+		(pt 0 24)
+		(input)
+		(text "IN2" (rect 2 15 22 26)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 15 22 26)(font "Courier New" (bold))(invisible))
+		(line (pt 0 24)(pt 16 24))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN3" (rect 2 23 22 34)(font "Courier New" (bold))(invisible))
+		(text "IN3" (rect 2 23 22 34)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 69 26)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 69 26)(font "Courier New" (bold))(invisible))
+		(line (pt 43 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 16 12)(pt 31 12))
+		(line (pt 16 37)(pt 31 37))
+		(line (pt 16 12)(pt 16 37))
+		(arc (pt 31 36)(pt 31 12)(rect 19 12 44 37))
+	)
+)
+(symbol
+	(rect 848 96 896 128)
+	(text "NOT" (rect 1 0 22 10)(font "Arial" (font_size 6)))
+	(text "inst2" (rect 3 21 26 32)(font "DejaVu Sans Condensed" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 14 18)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 14 18)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 53 18)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 53 18)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
+(symbol
+	(rect 848 144 896 176)
+	(text "NOT" (rect 1 0 22 10)(font "Arial" (font_size 6)))
+	(text "inst13" (rect 3 21 33 32)(font "DejaVu Sans Condensed" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 14 18)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 14 18)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 53 18)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 53 18)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
 	)
 )
 (connector
@@ -618,18 +743,8 @@ on the Quartus Prime software download page.
 	(pt 1376 8)
 )
 (connector
-	(pt 1288 48)
-	(pt 1344 48)
-	(bus)
-)
-(connector
 	(pt 1104 -40)
 	(pt 1120 -40)
-	(bus)
-)
-(connector
-	(pt 1120 -40)
-	(pt 1120 48)
 	(bus)
 )
 (connector
@@ -639,46 +754,41 @@ on the Quartus Prime software download page.
 )
 (connector
 	(pt 1120 248)
-	(pt 1120 152)
+	(pt 1120 200)
 	(bus)
 )
 (connector
-	(pt 1344 136)
-	(pt 1376 136)
+	(pt 1696 136)
+	(pt 1672 136)
 	(bus)
 )
 (connector
-	(pt 1120 152)
-	(pt 1376 152)
+	(pt 1496 184)
+	(pt 1528 184)
 	(bus)
 )
 (connector
-	(pt 1344 48)
-	(pt 1344 136)
+	(pt 1672 136)
+	(pt 1672 184)
 	(bus)
 )
 (connector
-	(pt 1512 136)
-	(pt 1544 136)
+	(pt 1672 184)
+	(pt 1664 184)
+	(bus)
+)
+(connector
+	(pt 1120 200)
+	(pt 1528 200)
 	(bus)
 )
 (connector
 	(pt 416 112)
-	(pt 416 160)
-)
-(connector
-	(text "S[2]" (rect 692 144 712 155)(font "DejaVu Sans Condensed" ))
-	(pt 416 160)
-	(pt 1024 160)
+	(pt 416 208)
 )
 (connector
 	(pt 400 112)
-	(pt 400 176)
-)
-(connector
-	(text "S[1]" (rect 692 184 712 195)(font "DejaVu Sans Condensed" ))
-	(pt 400 176)
-	(pt 1024 176)
+	(pt 400 224)
 )
 (connector
 	(pt 416 112)
@@ -696,8 +806,115 @@ on the Quartus Prime software download page.
 	(bus)
 )
 (connector
-	(pt 1088 168)
-	(pt 1376 168)
+	(pt 1528 216)
+	(pt 1088 216)
+)
+(connector
+	(pt 1288 48)
+	(pt 1336 48)
+	(bus)
+)
+(connector
+	(pt 1336 48)
+	(pt 1336 104)
+	(bus)
+)
+(connector
+	(pt 1336 104)
+	(pt 1344 104)
+	(bus)
+)
+(connector
+	(pt 1496 104)
+	(pt 1480 104)
+	(bus)
+)
+(connector
+	(pt 1496 184)
+	(pt 1496 104)
+	(bus)
+)
+(connector
+	(pt 1344 120)
+	(pt 1120 120)
+	(bus)
+)
+(connector
+	(pt 1120 -40)
+	(pt 1120 48)
+	(bus)
+)
+(connector
+	(pt 1120 48)
+	(pt 1120 120)
+	(bus)
+)
+(connector
+	(pt 1344 136)
+	(pt 1088 136)
+)
+(connector
+	(pt 1024 128)
+	(pt 1016 128)
+)
+(connector
+	(pt 1024 144)
+	(pt 1016 144)
+)
+(connector
+	(pt 1016 144)
+	(pt 1016 160)
+)
+(connector
+	(pt 1016 160)
+	(pt 896 160)
+)
+(connector
+	(pt 1016 112)
+	(pt 896 112)
+)
+(connector
+	(pt 1016 128)
+	(pt 1016 112)
+)
+(connector
+	(pt 832 136)
+	(pt 1024 136)
+)
+(connector
+	(pt 832 136)
+	(pt 832 224)
+)
+(connector
+	(text "S[1]" (rect 692 232 712 243)(font "DejaVu Sans Condensed" ))
+	(pt 400 224)
+	(pt 832 224)
+)
+(connector
+	(pt 832 224)
+	(pt 1024 224)
+)
+(connector
+	(text "S[0]" (rect 604 96 624 107)(font "DejaVu Sans Condensed" ))
+	(pt 848 112)
+	(pt 432 112)
+)
+(connector
+	(pt 848 160)
+	(pt 784 160)
+)
+(connector
+	(pt 784 160)
+	(pt 784 208)
+)
+(connector
+	(text "S[2]" (rect 692 192 712 203)(font "DejaVu Sans Condensed" ))
+	(pt 416 208)
+	(pt 784 208)
+)
+(connector
+	(pt 784 208)
+	(pt 1024 208)
 )
 (junction (pt 192 -72))
 (junction (pt 168 -56))
@@ -705,3 +922,7 @@ on the Quartus Prime software download page.
 (junction (pt 432 -8))
 (junction (pt 416 112))
 (junction (pt 400 112))
+(junction (pt 1120 48))
+(junction (pt 832 224))
+(junction (pt 432 112))
+(junction (pt 784 208))

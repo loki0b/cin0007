@@ -1,0 +1,109 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2025  Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Altera and sold by Altera or its authorized distributors.  Please
+# refer to the Altera Software License Subscription Agreements 
+# on the Quartus Prime software download page.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+# Date created = 22:46:24  April 14, 2026
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		ALU_FPGA_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY ALU_FPGA
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 25.1STD.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:46:24  APRIL 14, 2026"
+set_global_assignment -name LAST_QUARTUS_VERSION "25.1std.0 Lite Edition"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_location_assignment PIN_AA24 -to A[0]
+set_location_assignment PIN_AA23 -to A[1]
+set_location_assignment PIN_AA22 -to A[2]
+set_location_assignment PIN_Y24 -to A[3]
+set_location_assignment PIN_Y23 -to A[4]
+set_location_assignment PIN_AC25 -to B[0]
+set_location_assignment PIN_AB25 -to B[1]
+set_location_assignment PIN_AC24 -to B[2]
+set_location_assignment PIN_AB24 -to B[3]
+set_location_assignment PIN_AB23 -to B[4]
+set_location_assignment PIN_H17 -to A_LED[0]
+set_location_assignment PIN_F15 -to A_LED[1]
+set_location_assignment PIN_G15 -to A_LED[2]
+set_location_assignment PIN_G16 -to A_LED[3]
+set_location_assignment PIN_H15 -to A_LED[4]
+set_location_assignment PIN_J17 -to B_LED[0]
+set_location_assignment PIN_G17 -to B_LED[1]
+set_location_assignment PIN_J15 -to B_LED[2]
+set_location_assignment PIN_H16 -to B_LED[3]
+set_location_assignment PIN_J16 -to B_LED[4]
+set_location_assignment PIN_AC26 -to S[0]
+set_location_assignment PIN_AD26 -to S[1]
+set_location_assignment PIN_AB26 -to S[2]
+set_location_assignment PIN_E18 -to S_LED[0]
+set_location_assignment PIN_J19 -to S_LED[1]
+set_location_assignment PIN_H19 -to S_LED[2]
+set_location_assignment PIN_F17 -to Status_LED
+set_location_assignment PIN_E21 -to Out_LED[0]
+set_location_assignment PIN_E22 -to Out_LED[1]
+set_location_assignment PIN_E25 -to Out_LED[2]
+set_location_assignment PIN_E24 -to Out_LED[3]
+set_location_assignment PIN_H21 -to Out_LED[4]
+set_location_assignment PIN_G20 -to Out_LED[5]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name BDF_FILE adder.bdf
+set_global_assignment -name BDF_FILE ALU.bdf
+set_global_assignment -name BDF_FILE full_adder.bdf
+set_global_assignment -name BDF_FILE half_adder.bdf
+set_global_assignment -name BDF_FILE ALU_FPGA.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name BDF_FILE twos_complement.bdf
+set_global_assignment -name BDF_FILE arithmetic_unit.bdf
+set_global_assignment -name BDF_FILE and_logic_operator.bdf
+set_global_assignment -name BDF_FILE xor_logic_operator.bdf
+set_global_assignment -name BDF_FILE mux_2x1.bdf
+set_global_assignment -name BDF_FILE mux_12x6.bdf
+set_global_assignment -name BDF_FILE logic_unit.bdf
+set_global_assignment -name BDF_FILE 1bit_comparator.bdf
+set_global_assignment -name BDF_FILE comparator.bdf
+set_global_assignment -name BDF_FILE mux_8x4.bdf
+set_global_assignment -name BDF_FILE bit_extensor.bdf
+set_global_assignment -name BDF_FILE sub_detector.bdf
+set_global_assignment -name BDF_FILE conditional_2complement.bdf
+set_global_assignment -name BDF_FILE enable_2complement_func.bdf
+set_global_assignment -name BDF_FILE A_handler.bdf
+set_global_assignment -name BDF_FILE B_handler.bdf
+set_global_assignment -name BDF_FILE status.bdf
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
