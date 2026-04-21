@@ -22,7 +22,7 @@ on the Quartus Prime software download page.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 16 16 152 112)
-	(text "xor_logic_operator" (rect 5 0 114 13)(font "DejaVu Sans Condensed" (font_size 8)))
+	(text "logic_unit" (rect 5 0 61 13)(font "DejaVu Sans Condensed" (font_size 8)))
 	(text "inst" (rect 8 81 25 92)(font "DejaVu Sans Condensed" ))
 	(port
 		(pt 0 32)
@@ -39,10 +39,17 @@ on the Quartus Prime software download page.
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
+		(pt 0 64)
+		(input)
+		(text "S" (rect 0 0 8 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "S" (rect 21 59 29 72)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
 		(pt 136 32)
 		(output)
-		(text "N[4..0]" (rect 0 0 40 13)(font "DejaVu Sans Condensed" (font_size 8)))
-		(text "N[4..0]" (rect 75 27 115 40)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "N[5..0]" (rect 0 0 40 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "N[5..0]" (rect 75 27 115 40)(font "DejaVu Sans Condensed" (font_size 8)))
 		(line (pt 136 32)(pt 120 32)(line_width 3))
 	)
 	(drawing

@@ -24,7 +24,7 @@ on the Quartus Prime software download page.
 	(input)
 	(rect 216 136 232 304)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
-	(text "A[3..0]" (rect 1 125 12 161)(font "Arial" )(vertical))
+	(text "A[4..0]" (rect 2 124 13 160)(font "Arial" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 12 84)(pt 12 59))
@@ -41,7 +41,7 @@ on the Quartus Prime software download page.
 	(input)
 	(rect 240 136 256 304)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
-	(text "B[3..0]" (rect 0 129 11 162)(font "DejaVu Sans Condensed" )(vertical))
+	(text "B[4..0]" (rect 0 129 11 162)(font "DejaVu Sans Condensed" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 12 84)(pt 12 59))
@@ -58,7 +58,7 @@ on the Quartus Prime software download page.
 	(output)
 	(rect 528 152 544 328)
 	(text "OUTPUT" (rect 6 1 16 39)(font "Arial" (font_size 6))(vertical))
-	(text "N[3..0]" (rect 6 89 17 125)(font "Arial" )(vertical))
+	(text "N[4..0]" (rect 7 88 18 124)(font "Arial" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 8 0)(pt 8 52))
@@ -199,6 +199,38 @@ on the Quartus Prime software download page.
 		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
 	)
 )
+(symbol
+	(rect 352 -136 416 -88)
+	(text "AND2" (rect 1 0 28 10)(font "Arial" (font_size 6)))
+	(text "inst4" (rect 3 37 26 48)(font "DejaVu Sans Condensed" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 22 18)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 22 18)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 22 34)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 22 34)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 69 26)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 69 26)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 37)(pt 31 37))
+		(line (pt 14 12)(pt 14 37))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
+)
 (connector
 	(text "A[0]" (rect 284 120 304 131)(font "DejaVu Sans Condensed" ))
 	(pt 224 120)
@@ -300,8 +332,33 @@ on the Quartus Prime software download page.
 	(pt 536 112)
 )
 (connector
+	(text "N[4]" (rect 424 -128 445 -117)(font "DejaVu Sans Condensed" ))
+	(pt 536 -112)
+	(pt 416 -112)
+)
+(connector
+	(text "A[4]" (rect 232 -120 252 -109)(font "DejaVu Sans Condensed" ))
+	(pt 224 -104)
+	(pt 352 -104)
+)
+(connector
+	(text "B[4]" (rect 256 -136 276 -125)(font "DejaVu Sans Condensed" ))
+	(pt 248 -120)
+	(pt 352 -120)
+)
+(connector
+	(pt 224 -104)
+	(pt 224 -48)
+	(bus)
+)
+(connector
 	(pt 224 -48)
 	(pt 224 8)
+	(bus)
+)
+(connector
+	(pt 248 -120)
+	(pt 248 -64)
 	(bus)
 )
 (connector
@@ -310,12 +367,17 @@ on the Quartus Prime software download page.
 	(bus)
 )
 (connector
+	(pt 536 -112)
+	(pt 536 -56)
+	(bus)
+)
+(connector
 	(pt 536 -56)
 	(pt 536 0)
 	(bus)
 )
 (connector
-	(text "N[3..0]" (rect 520 108 531 141)(font "DejaVu Sans Condensed" )(vertical))
+	(text "N[4..0]" (rect 520 108 531 141)(font "DejaVu Sans Condensed" )(vertical))
 	(pt 536 112)
 	(pt 536 152)
 	(bus)
@@ -329,3 +391,6 @@ on the Quartus Prime software download page.
 (junction (pt 536 0))
 (junction (pt 536 56))
 (junction (pt 536 112))
+(junction (pt 224 -48))
+(junction (pt 248 -64))
+(junction (pt 536 -56))
