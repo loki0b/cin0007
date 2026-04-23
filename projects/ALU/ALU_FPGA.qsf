@@ -162,4 +162,10 @@ set_location_assignment PIN_L26 -to Display_N0[3]
 set_location_assignment PIN_L25 -to Display_N0[4]
 set_location_assignment PIN_J22 -to Display_N0[5]
 set_location_assignment PIN_H22 -to Display_N0[6]
+set_global_assignment -name EDA_SIMULATION_TOOL "<None>"
+set_global_assignment -name BDF_FILE display/display_handler.bdf
+set_global_assignment -name BDF_FILE display/input_func_detector.bdf
+set_global_assignment -name BDF_FILE display/output_func_detector.bdf
+set_global_assignment -name BDF_FILE misc/compartor_detector.bdf
+set_global_assignment -name BDF_FILE display/LED_handler.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
